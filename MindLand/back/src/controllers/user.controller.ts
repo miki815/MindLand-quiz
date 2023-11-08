@@ -86,12 +86,12 @@ export class UserController{
         var transporter = nodemailer.createTransport({
             service: 'hotmail',
             auth: {
-                user: 'mm190117d@student.etf.bg.ac.rs',
-                pass: '1billion1'
+                user: 'email here',
+                pass: 'password here'
             }
         });
         var mailOptions = {
-            from: 'mm190117d@student.etf.bg.ac.rs',
+            from: 'email here',
             to: req.body.email,
             subject: 'Promena lozinke',
             text: `http://localhost:4200/promena_zaboravljene_lozinke/${reset_token.token}`
