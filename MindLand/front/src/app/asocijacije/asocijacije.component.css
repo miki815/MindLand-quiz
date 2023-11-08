@@ -1,0 +1,163 @@
+.title {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .nav-item-right {
+    margin-left: auto; 
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .row-container {
+    display: flex;
+  }
+  
+  .left-side {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .center-side {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .square-button {
+    width: 250px;
+    height: 35px;
+    background-color: #555;
+    margin: 5px;
+    color: white;
+    font-size: 24px;
+  }
+
+  #potvrdi-button{
+    width: 100px;
+    height: 35px;
+    background-color: #07a764;
+    margin: 5px;
+    color: white;
+    font-size: 24px;
+    border: 1px solid black;
+  }
+
+  #potvrdi-button:hover{
+    background-color: #8cdda4;
+  }
+
+   #potvrdi-button:active{
+    background-color: #047e29;
+  }
+
+  .square-button:hover {
+    background-color: #ccc;
+  }
+  
+  .square-button:active {
+    background-color: #777;
+    box-shadow: none;
+  }
+  
+  .square-button-red {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    margin: 5px;
+    color: white;
+    font-size: 24px;
+  }
+
+  .square-button-red:hover {
+    background-color: #f89595;
+  }
+  
+  .square-button-red:active {
+    background-color: #741414;
+    box-shadow: none;
+  }
+
+  .square-button-green {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 55);
+    margin: 5px;
+    color: black;
+    font-size: 24px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .square-button-green:hover {
+    background-color: #78eb74;
+  }
+  
+  .square-button-green:active {
+    background-color: #018522;
+    box-shadow: none;
+  }
+
+  .column-input{
+    width: 250px;
+    height: 35px;
+    margin: 5px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 30px;
+    background-color: #777;
+    color: white;
+    border: 1px solid black;
+  }
+
+  #field-found{
+    background-color: rgb(51, 252, 24);
+    color: black;
+  }

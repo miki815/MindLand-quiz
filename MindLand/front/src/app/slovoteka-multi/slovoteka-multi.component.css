@@ -1,0 +1,209 @@
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .button-row button {
+    margin: 5px;
+    padding: 0px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #111;
+    background-color: #ff9900;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .button-row button:hover {
+    background-color: #ffca66;
+  }
+  
+  .button-row button:focus {
+    outline: none;
+  }
+  
+  .button-row button:active {
+    background-color: #ce7b00;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+  }
+
+  .game-title{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #7a7a7ae7;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btnStop {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    background-color: red;
+    color: white;
+  }
+
+  #btnStop:hover {
+    background-color: rgb(192, 53, 53);
+  }
+
+  #btnStop:active {
+    background-color: rgb(131, 0, 0);
+  }
+  
+  #btnConfirm {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    background-color: forestgreen;
+    color: white;
+  }
+
+  #btnConfirm:hover {
+    background-color: rgb(49, 192, 109);
+  }
+
+  #btnConfirm:active {
+    background-color: rgb(2, 153, 23);
+  }
+
+  .info-textbox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .btn-my-number, .btn-result{
+    width: 200px;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .nav-item-right {
+    margin-left: auto; 
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .word{
+    font-size: 40px;
+    background-color: #e2c497;
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .words{
+    font-size: 24px;
+    background-color: rgb(171, 207, 150);
+    height: 120px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .player-blue{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-width: 50px;
+  }
+
+  .player-red{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-width: 50px;
+  }
+
+  .row-container {
+    display: flex;
+  }
+  
+  .left-side {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .center-side {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }

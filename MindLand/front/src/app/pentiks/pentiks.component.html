@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="red-square" cdkDrag></div>
+    <table>
+      <tr *ngFor="let row of rows">
+        <td *ngFor="let column of columns" [ngClass]="{'blue-square': isSquareOccupied(row, column)}" cdkDropList [cdkDropListData]="[row, column]" (cdkDropListDropped)="dropSquare($event, row, column)">
+        </td>
+      </tr>
+    </table>
+  </div>

@@ -1,0 +1,108 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./skocko" class="nav-link">Nova igra</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="title">
+    {{message}}
+</div>
+<div class="button-container">
+    <button (click)="deleteSymbol(0, 0)" class="square-button"><i [class]="tableIcons[0][0]"></i></button>
+    <button (click)="deleteSymbol(0, 1)" class="square-button"><i [class]="tableIcons[0][1]"></i></button>
+    <button (click)="deleteSymbol(0, 2)" class="square-button"><i [class]="tableIcons[0][2]"></i></button>
+    <button (click)="deleteSymbol(0, 3)" class="square-button"><i [class]="tableIcons[0][3]"></i></button>
+    <div class="circle-button" [class]="tableIcons[0][4]"></div>
+    <div class="circle-button" [class]="tableIcons[0][5]"></div>
+    <div class="circle-button" [class]="tableIcons[0][6]"></div>
+    <div class="circle-button" [class]="tableIcons[0][7]"></div>
+    <button class="square-button" (click)="addSymbol('fas fa-ice-cream ice-cream-icon', 0)">
+        <i class="fas fa-ice-cream ice-cream-icon"></i>
+    </button>
+</div>
+<div class="button-container">
+    <button (click)="deleteSymbol(1, 0)" class="square-button"><i [class]="tableIcons[1][0]"></i></button>
+    <button (click)="deleteSymbol(1, 1)" class="square-button"><i [class]="tableIcons[1][1]"></i></button>
+    <button (click)="deleteSymbol(1, 2)" class="square-button"><i [class]="tableIcons[1][2]"></i></button>
+    <button (click)="deleteSymbol(1, 3)" class="square-button"><i [class]="tableIcons[1][3]"></i></button>
+    <div class="circle-button" [class]="tableIcons[1][4]"></div>
+    <div class="circle-button" [class]="tableIcons[1][5]"></div>
+    <div class="circle-button" [class]="tableIcons[1][6]"></div>
+    <div class="circle-button" [class]="tableIcons[1][7]"></div>
+    <button class="square-button" (click)="addSymbol('fas fa-heart heart-icon', 1)">
+        <i class="fas fa-heart heart-icon"></i>
+    </button>
+</div>
+<div class="button-container">
+    <button (click)="deleteSymbol(2, 0)" class="square-button"><i [class]="tableIcons[2][0]"></i></button>
+    <button (click)="deleteSymbol(2, 1)" class="square-button"><i [class]="tableIcons[2][1]"></i></button>
+    <button (click)="deleteSymbol(2, 2)" class="square-button"><i [class]="tableIcons[2][2]"></i></button>
+    <button (click)="deleteSymbol(2, 3)" class="square-button"><i [class]="tableIcons[2][3]"></i></button>
+    <div class="circle-button" [class]="tableIcons[2][4]"></div>
+    <div class="circle-button" [class]="tableIcons[2][5]"></div>
+    <div class="circle-button" [class]="tableIcons[2][6]"></div>
+    <div class="circle-button" [class]="tableIcons[2][7]"></div>
+    <button class="square-button" (click)="addSymbol('fas fa-book book-icon', 2)">
+        <i class="fas fa-book book-icon"></i>
+    </button>
+</div>
+<div class="button-container">
+    <button (click)="deleteSymbol(3, 0)" class="square-button"><i [class]="tableIcons[3][0]"></i></button>
+    <button (click)="deleteSymbol(3, 1)" class="square-button"><i [class]="tableIcons[3][1]"></i></button>
+    <button (click)="deleteSymbol(3, 2)" class="square-button"><i [class]="tableIcons[3][2]"></i></button>
+    <button (click)="deleteSymbol(3, 3)" class="square-button"><i [class]="tableIcons[3][3]"></i></button>
+    <div class="circle-button" [class]="tableIcons[3][4]"></div>
+    <div class="circle-button" [class]="tableIcons[3][5]"></div>
+    <div class="circle-button" [class]="tableIcons[3][6]"></div>
+    <div class="circle-button" [class]="tableIcons[3][7]"></div>
+    <button class="square-button" (click)="addSymbol('fas fa-tint tint-icon', 3)">
+        <i class="fas fa-tint tint-icon"></i>
+    </button>
+</div>
+<div class="button-container">
+    <button (click)="deleteSymbol(4, 0)" class="square-button"><i [class]="tableIcons[4][0]"></i></button>
+    <button (click)="deleteSymbol(4, 1)" class="square-button"><i [class]="tableIcons[4][1]"></i></button>
+    <button (click)="deleteSymbol(4, 2)" class="square-button"><i [class]="tableIcons[4][2]"></i></button>
+    <button (click)="deleteSymbol(4, 3)" class="square-button"><i [class]="tableIcons[4][3]"></i></button>
+    <div class="circle-button" [class]="tableIcons[4][4]"></div>
+    <div class="circle-button" [class]="tableIcons[4][5]"></div>
+    <div class="circle-button" [class]="tableIcons[4][6]"></div>
+    <div class="circle-button" [class]="tableIcons[4][7]"></div>
+    <button class="square-button" (click)="addSymbol('fas fa-star star-icon', 4)">
+        <i class="fas fa-star star-icon"></i>
+    </button>
+</div>
+<div class="button-container">
+    <button (click)="deleteSymbol(5, 0)" class="square-button"><i [class]="tableIcons[5][0]"></i></button>
+    <button (click)="deleteSymbol(5, 1)" class="square-button"><i [class]="tableIcons[5][1]"></i></button>
+    <button (click)="deleteSymbol(5, 2)" class="square-button"><i [class]="tableIcons[5][2]"></i></button>
+    <button (click)="deleteSymbol(5, 3)" class="square-button"><i [class]="tableIcons[5][3]"></i></button>
+    <div class="circle-button" [class]="tableIcons[5][4]"></div>
+    <div class="circle-button" [class]="tableIcons[5][5]"></div>
+    <div class="circle-button" [class]="tableIcons[5][6]"></div>
+    <div class="circle-button" [class]="tableIcons[5][7]"></div>
+    <button class="square-button" (click)="addSymbol('fas fa-gem gem-icon', 5)">
+        <i class="fas fa-gem gem-icon"></i>
+    </button>
+</div>
+<hr/>
+
+<div class="button-container">
+    <button class="square-button"><i [class]="combinationIcons[0]"></i></button>
+    <button class="square-button"><i [class]="combinationIcons[1]"></i></button>
+    <button class="square-button"><i [class]="combinationIcons[2]"></i></button>
+    <button class="square-button"><i [class]="combinationIcons[3]"></i></button>
+</div>
+
+<div class="centered-button">
+    <button (click)="checkGuess()" [disabled]="btnDisabled">Proveri</button>
+</div>
+<div id="results"></div>

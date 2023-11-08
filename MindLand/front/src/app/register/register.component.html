@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="title">
+        Dobrodošli na Mozgolend!<br/>
+        Registrujte se i započnite vaše putovanje!
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="firstname">Ime:</label>
+        <input type="text" id="firstname" name="firstname" [(ngModel)]="firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Prezime:</label>
+        <input type="text" id="lastname" name="lastname" [(ngModel)]="lastname">
+      </div>
+      <div class="form-group">
+        <label for="username">Korisničko ime:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password">
+      </div>
+      <div class="form-group">
+        <label for="password2">Potvrda lozinke:</label>
+        <input type="password" id="password2" name="password2" [(ngModel)]="password2">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email">
+      </div>
+      <div class="form-group">
+        <button (click)="register()">Registruj se!</button>
+      </div>
+    </form>
+    <div class="login-container">
+      Već ste se registrovali? Ulogujte se <a href="../">ovde</a>
+    </div>
+    <span class="error">{{message}}</span>
+  </div>

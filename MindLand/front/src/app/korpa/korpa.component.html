@@ -1,0 +1,71 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./korpa" class="nav-link">Nova igra</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="title">
+    {{message}}
+</div>
+
+<div class="kasa">
+    <div class="kasa-msg">
+        <b>KASA</b>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled" (click)="chooseNumber(0)" class="square-button">{{kasa[0]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(1)" class="square-button">{{kasa[1]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(2)" class="square-button">{{kasa[2]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled" (click)="chooseNumber(3)" class="square-button">{{kasa[3]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(4)" class="square-button">{{kasa[4]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(5)" class="square-button">{{kasa[5]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled" (click)="chooseNumber(6)" class="square-button">{{kasa[6]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(7)" class="square-button">{{kasa[7]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(8)" class="square-button">{{kasa[8]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled" (click)="chooseNumber(9)" class="square-button">{{kasa[9]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(10)" class="square-button">{{kasa[10]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(11)" class="square-button">{{kasa[11]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled" (click)="chooseNumber(12)" class="square-button">{{kasa[12]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(13)" class="square-button">{{kasa[13]}}</button>
+        <button [disabled]="btnDisabled" (click)="chooseNumber(14)" class="square-button">{{kasa[14]}}</button>
+    </div>
+</div>
+<div class="korpa-container">
+    <div class="left-side">
+      <button [disabled]="!gameStarted" (click)="addNumber(0,1)" class="square-button-blue">{{korpaBlue[0]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(1,1)" class="square-button-blue">{{korpaBlue[1]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(2,1)" class="square-button-blue">{{korpaBlue[2]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(3,1)" class="square-button-blue">{{korpaBlue[3]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(4,1)" class="square-button-blue">{{korpaBlue[4]}}</button>
+    </div>
+    <div class="center-side">
+        <button class="square-button-green" [hidden]="btnHidden"><b>{{currentSum}}</b></button>
+        <button class="square-button-green" [hidden]="btnHidden"><b>{{boundarySum}}</b></button>
+    </div>
+    <div class="right-side">
+      <button [disabled]="!gameStarted" (click)="addNumber(0,0)" class="square-button-red">{{korpaRed[0]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(1,0)" class="square-button-red">{{korpaRed[1]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(2,0)" class="square-button-red">{{korpaRed[2]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(3,0)" class="square-button-red">{{korpaRed[3]}}</button>
+      <button [disabled]="!gameStarted" (click)="addNumber(4,0)" class="square-button-red">{{korpaRed[4]}}</button>
+    </div>
+</div>
+<div class="timer">
+    {{timer}}
+</div>

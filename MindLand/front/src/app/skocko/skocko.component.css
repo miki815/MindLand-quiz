@@ -1,0 +1,141 @@
+.title {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+.symbol-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .gem-icon{
+    color: aqua;
+  }
+
+  .star-icon{
+    color: #f1f500;
+  }
+
+  .heart-icon{
+    color: red;
+  }
+
+  .book-icon{
+    color:rgb(0, 250, 33);
+  }
+
+  .ice-cream-icon{
+    color:rgb(223, 26, 147);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .tint-icon{
+    color: rgb(23, 7, 255);
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .square-button {
+    width: 50px;
+    height: 50px;
+    background-color: #222; 
+    margin-right: 10px;
+  }
+  
+  .circle-button {
+    width: 50px;
+    height: 50px;
+    background-color: #eee; 
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .square-button:hover {
+    background-color: #aaa;
+  }
+  
+  .square-button:active {
+    background-color: #888;
+    box-shadow: none;
+  }
+
+  i{
+    font-size: 24px;
+  }
+
+  .wrong-position{
+    background-color: yellow;
+  }
+
+  .right-position{
+    background-color: rgb(45, 240, 38);
+  }
+
+  .centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .centered-button button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .centered-button button:hover {
+    background-color: #45a049;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .nav-item-right {
+    margin-left: auto; 
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-link:hover {
+    background-color: #333;
+    color: #fff;
+  }

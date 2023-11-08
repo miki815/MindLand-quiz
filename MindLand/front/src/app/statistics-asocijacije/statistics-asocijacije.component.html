@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+        <a href="./stats-global" class="nav-link">Nazad</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<h1 class="game-title">Asocijacije - prosek vaših dostignuća</h1>
+<div class="container">
+    <div>
+        <h2>0 rešenja:  {{statistic.asocijacijeStats[0]}}</h2>
+        <div class="progress-bar">
+            <div class="progress"  [style.background]="progressPercentage[0]"></div>
+        </div>
+        <h2>1 rešenje:  {{statistic.asocijacijeStats[1]}}</h2>
+        <div class="progress-bar">
+            <div class="progress"  [style.background]="progressPercentage[1]"></div>
+        </div>
+        <h2>2 rešenja:  {{statistic.asocijacijeStats[2]}}</h2>
+        <div class="progress-bar">
+            <div class="progress"  [style.background]="progressPercentage[2]"></div>
+        </div>
+        <h2>3 rešenja:  {{statistic.asocijacijeStats[3]}}</h2>
+        <div class="progress-bar">
+            <div class="progress"  [style.background]="progressPercentage[3]"></div>
+        </div>
+        <h2>4 rešenja:  {{statistic.asocijacijeStats[4]}}</h2>
+        <div class="progress-bar">
+            <div class="progress"  [style.background]="progressPercentage[4]"></div>
+        </div>
+        <h2>Kompletna asocijacija:  {{statistic.asocijacijeStats[5]}}</h2>
+        <div class="progress-bar">
+            <div class="progress"  [style.background]="progressPercentage[5]"></div>
+        </div>
+    </div>
+</div>
+
+<div class="button-row">
+    <button (click)="exercise()">Vežba</button>
+</div>
+

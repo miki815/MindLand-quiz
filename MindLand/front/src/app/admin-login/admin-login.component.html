@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="title">
+        Admin
+    </div>
+
+    <table>
+        <tr>
+            <td>Korisničko ime: </td>
+            <td>
+                <input type="text" name="username" [(ngModel)]="username">
+            </td>
+        </tr>
+        <tr>
+            <td>Lozinka: </td>
+            <td>
+                <input type="password" name="password" [(ngModel)]="password">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="login-container">
+                    <button class="login" (click)="login()">Uloguj se</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <span class="error">{{message}}</span>
+    <div class="register">
+        Zaboravili ste lozinku? Kliknite <a href="../zaboravljena-lozinka">ovde</a>
+    </div>
+</div>

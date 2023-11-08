@@ -1,0 +1,40 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./pitanja" class="nav-link">Nova igra</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">KO ZNA ZNA</h1>
+    <p class="game-title">{{message}}</p>
+    <textarea class="question-container" rows="4" readonly>{{question.text}}</textarea>
+
+    <div class="answer-container">
+        <div class="button-row">
+            <button [id]="btnClass[0]" (click)="answerQuestion(1)" [disabled]="btnDisabled">{{question.answer1}}</button>
+            <button [id]="btnClass[1]" (click)="answerQuestion(2)" [disabled]="btnDisabled">{{question.answer2}}</button>
+        </div>
+
+        <div class="button-row">
+            <button [id]="btnClass[2]" (click)="answerQuestion(3)" [disabled]="btnDisabled">{{question.answer3}}</button>
+            <button [id]="btnClass[3]" (click)="answerQuestion(4)" [disabled]="btnDisabled">{{question.answer4}}</button>
+        </div>
+
+        <div class="button-row">
+            <button id="dalje-btn" (click)="answerQuestion(0)" [disabled]="btnDisabled">Dalje</button>
+        </div>
+    </div>
+
+    <div class="timer">
+        {{timer}}
+    </div>
+</div>

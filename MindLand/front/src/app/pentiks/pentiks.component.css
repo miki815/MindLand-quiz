@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .red-square {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+  }
+  
+  .blue-square {
+    background-color: blue;
+  }

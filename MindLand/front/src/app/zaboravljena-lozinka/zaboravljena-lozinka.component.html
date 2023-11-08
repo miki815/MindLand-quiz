@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./" class="nav-link">Uloguj se</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./register" class="nav-link">Registracija</a>
+      </li>
+      <li class="nav-item-right">
+        <span href="./" class="nav-link"></span>
+      </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="title">
+        Unesite vaš email i poslaćemo vam link za resetovanje lozinke.<br/>
+        Link važi narednih 30 minuta!
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email">
+      </div>
+      <div class="form-group">
+        <button (click)="promena_lozinke()">Potvrdi</button>
+      </div>
+    </form>
+</div>

@@ -1,0 +1,107 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .nav-item-right {
+    margin-left: auto; 
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .button-row button {
+    background: linear-gradient(135deg,#00ff73, #0a20e6);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .button-row button:hover {
+    background: linear-gradient(135deg,#1b1b1b, #df0ae6);
+  }
+  
+  .button-row button:focus {
+    outline: none;
+  }
+  
+  .button-row button:active {
+    background-color: #135392;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .game-title{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  #win{
+    background-color: #333;
+    color: #00ff73;
+  }
+
+  #loss{
+    background-color: #333;
+    color: red;
+  }
+
+  #streak{
+   background-color: #333;
+   color: #df0ae6;
+  }

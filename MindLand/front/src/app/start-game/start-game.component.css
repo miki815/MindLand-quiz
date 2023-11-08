@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+  }
+  
+  .left-side {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 100px auto;
+    background-color: blue;
+    width: 300px;
+    text-align: center;
+    height: 50vh;
+    border: 1px solid black;
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 100px auto;
+    background-color: red;
+    width: 300px;
+    text-align: center;
+    height: 50vh;
+    border: 1px solid black;
+  }
+
+  .center-side {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40%;
+  }
+
+  .info{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .timer {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #7a7a7ae7;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .star-icon{
+    color: #f2f531;
+}

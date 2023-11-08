@@ -1,0 +1,21 @@
+<div class="scoreboard">
+    <div class="winner">Pobednik: {{winner}}</div>
+    <div class="scores">
+      <div class="player-score">
+        <span class="player-name">{{gameInfo.bluePlayer}}</span>
+        <span id="blueS" class="score">{{gameInfo.bluePoints}}</span>
+      </div>
+      <div class="player-score">
+        <span class="player-name">{{gameInfo.redPlayer}}</span>
+        <span id="redS" class="score">{{gameInfo.redPoints}}</span>
+      </div>
+      <div class="player-score">
+        <span class="rating">Rejting: </span>
+        <span class="rating">{{myRating}}</span>
+      </div>
+      <div class="player-score">
+        <button (click)="goHome()">Početna</button>
+      </div>
+
+    </div>
+</div>

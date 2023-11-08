@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<h1 class="game-title">Najbolji igrači</h1>
+<table>
+    <tr>
+      <th>Top</th>
+      <th>Korisnik</th>
+      <th><i class="fas fa-star star-icon"></i></th>
+    </tr>
+    <tr *ngFor="let u of bestUsers; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{u.username}}</td>
+      <td>{{u.rating}}</td>
+    </tr>
+    <tr *ngIf="myRang > 5">
+      <td>{{myRang}}</td>
+      <td>{{player.username}}</td>
+      <td>{{player.rating}}</td>
+    </tr>
+</table>

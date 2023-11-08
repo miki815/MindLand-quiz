@@ -1,0 +1,95 @@
+<nav class="navbar">
+    <div class="row-container">
+        <div class="left-side">
+            <span class="player-blue">{{this.gameInfo.bluePlayer}}</span>
+        </div>
+        <div class="center-side">
+            <span class="player-blue">{{this.gameInfo.bluePoints}}</span>
+            <span class="timer">{{timer}}</span>
+            <span class="player-red">{{this.gameInfo.redPoints}}</span>
+        </div>       
+        <div class="right-side">
+            <span class="player-red">{{this.gameInfo.redPlayer}}</span>
+        </div>
+    </div>
+</nav>
+
+<div class="title">
+   
+</div>
+
+<div class="kasa">
+    <div class="kasa-msg">
+        <b>KASA</b>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(0)" class="square-button">{{kasa[0]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(1)" class="square-button">{{kasa[1]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(2)" class="square-button">{{kasa[2]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(3)" class="square-button">{{kasa[3]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(4)" class="square-button">{{kasa[4]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(5)" class="square-button">{{kasa[5]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(6)" class="square-button">{{kasa[6]}}</button>
+        <button [disabled]="btnDisabled|| playerIdent != currentPlayerIdent"
+         (click)="kasaClick(7)" class="square-button">{{kasa[7]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(8)" class="square-button">{{kasa[8]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent" 
+        (click)="kasaClick(9)" class="square-button">{{kasa[9]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(10)" class="square-button">{{kasa[10]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(11)" class="square-button">{{kasa[11]}}</button>
+    </div>
+    <div class="button-container">
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(12)" class="square-button">{{kasa[12]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent"
+         (click)="kasaClick(13)" class="square-button">{{kasa[13]}}</button>
+        <button [disabled]="btnDisabled || playerIdent != currentPlayerIdent" 
+        (click)="kasaClick(14)" class="square-button">{{kasa[14]}}</button>
+    </div>
+</div>
+<div class="korpa-container">
+    <div class="left-side">
+      <button [disabled]="!gameStarted || playerIdent != 0 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(0,0)" class="square-button-blue">{{korpaBlue[0]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 0 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(1,0)" class="square-button-blue">{{korpaBlue[1]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 0 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(2,0)" class="square-button-blue">{{korpaBlue[2]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 0 || playerIdent != currentPlayerIdent"  
+       (click)="korpaClick(3,0)" class="square-button-blue">{{korpaBlue[3]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 0 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(4,0)" class="square-button-blue">{{korpaBlue[4]}}</button>
+    </div>
+    <div class="center-side">
+        <button class="square-button-green" [hidden]="btnHidden"><b>{{currentSum}}</b></button>
+        <button class="square-button-green" [hidden]="btnHidden"><b>{{boundarySum}}</b></button>
+    </div>
+    <div class="right-side">
+      <button [disabled]="!gameStarted || playerIdent != 1 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(0,1)" class="square-button-red">{{korpaRed[0]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 1 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(1,1)" class="square-button-red">{{korpaRed[1]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 1 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(2,1)" class="square-button-red">{{korpaRed[2]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 1 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(3,1)" class="square-button-red">{{korpaRed[3]}}</button>
+      <button [disabled]="!gameStarted || playerIdent != 1 || playerIdent != currentPlayerIdent" 
+       (click)="korpaClick(4,1)" class="square-button-red">{{korpaRed[4]}}</button>
+    </div>
+</div>

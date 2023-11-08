@@ -1,0 +1,34 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+        <a href="./stats-global" class="nav-link">Nazad</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<h1 class="game-title">Moja cifra - prosek vaših dostignuća</h1>
+<div class="container">
+    <div>
+    <h2>Broj cifara prosek:  {{avgDigit}}</h2>
+    <div class="progress-bar">
+        <div class="progress"  [style.background]="progressPercentage[0]"></div>
+    </div>
+    <h2>Udaljenost prosek:  {{avgDistance}}</h2>
+    <div class="progress-bar">
+        <div class="progress"  [style.background]="progressPercentage[1]"></div>
+    </div>
+    <h2>Skor:  {{statistic.winMojBroj}}-{{statistic.lossMojBroj}}</h2>
+    <div class="progress-bar">
+        <div class="progress"  [style.background]="progressPercentage[2]"></div>
+    </div>
+    </div>
+</div>
+
+<div class="button-row">
+    <button (click)="exercise()">Vežba</button>
+</div>
+

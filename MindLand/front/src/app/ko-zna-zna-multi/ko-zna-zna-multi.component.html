@@ -1,0 +1,43 @@
+<nav class="navbar">
+  <div class="row-container">
+      <div class="left-side">
+        <span class="player-blue"><i class="fas fa-user-secret" [class]="blueStealClass"></i></span>
+        <span class="player-blue">{{this.gameInfo.bluePlayer}}</span>
+      </div>
+      <div class="center-side">
+          <span class="player-blue">{{this.gameInfo.bluePoints}}</span>
+          <span class="timer">{{timer}}</span>
+          <span class="player-red">{{this.gameInfo.redPoints}}</span>
+      </div>       
+      <div class="right-side">
+          <span class="player-red">{{this.gameInfo.redPlayer}}</span>
+          <span class="player-red"><i class="fas fa-user-secret" [class]="redStealClass"></i></span>
+      </div>
+  </div>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">SVEZNALICA</h1>
+    <p class="game-title">{{message}}</p>
+    <textarea class="question-container" rows="4" readonly>{{question.text}}</textarea>
+
+    <div class="answer-container">
+        <div class="button-row">
+            <button [id]="btnClass[0]" (click)="answerBtnClick(1)" [disabled]="btnDisabled">{{question.answer1}}</button>
+            <button [id]="btnClass[1]" (click)="answerBtnClick(2)" [disabled]="btnDisabled">{{question.answer2}}</button>
+        </div>
+
+        <div class="button-row">
+            <button [id]="btnClass[2]" (click)="answerBtnClick(3)" [disabled]="btnDisabled">{{question.answer3}}</button>
+            <button [id]="btnClass[3]" (click)="answerBtnClick(4)" [disabled]="btnDisabled">{{question.answer4}}</button>
+        </div>
+
+        <div class="button-row">
+            <button id="dalje-btn" (click)="answerBtnClick(0)" [disabled]="btnDisabled">Dalje</button>
+            <button *ngIf="stealUsed == false" id="ukradi-btn" (click)="answerBtnClick(-1)"
+             [disabled]="btnDisabled">Ukradi</button>
+        </div>
+    </div>
+
+</div>

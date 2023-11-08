@@ -1,0 +1,148 @@
+[{
+  "_id": {
+    "$oid": "64962bca78532d480f8840fb"
+  },
+  "username": "miki815",
+  "password": "123",
+  "rating": 120,
+  "type": "player",
+  "tokens": 200,
+  "firstname": "Miki",
+  "lastname": "Miki",
+  "win": 10,
+  "loss": 5,
+  "streak": 3
+},{
+  "_id": {
+    "$oid": "64962c3478532d480f8840fd"
+  },
+  "username": "Mare",
+  "password": "123",
+  "rating": 50,
+  "type": "player",
+  "firstname": "Marko",
+  "lastname": "Milenkovic",
+  "tokens": 200,
+  "win": 8,
+  "loss": 8,
+  "streak": 0
+},{
+  "_id": {
+    "$oid": "6499c4b2d0f0486492202ad3"
+  },
+  "firstname": "Lab",
+  "lastname": "Labic",
+  "username": "Lab",
+  "password": "Student123!",
+  "email": "lab@gmail.com",
+  "rating": 0,
+  "tokens": 50,
+  "win": 0,
+  "loss": 0,
+  "streak": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6499c7039ba6f7899f60500c"
+  },
+  "firstname": "abc",
+  "lastname": "abc",
+  "username": "abc",
+  "password": "Miki123!",
+  "email": "abc@gmail.com",
+  "rating": 0,
+  "tokens": 50,
+  "type": "player",
+  "win": 3,
+  "loss": 5,
+  "streak": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6499c78b9ba6f7899f605013"
+  },
+  "firstname": "abc",
+  "lastname": "abc",
+  "username": "abcd",
+  "password": "Miki123!",
+  "email": "abcd@gmail.com",
+  "rating": 0,
+  "tokens": 50,
+  "type": "player",
+  "win": 2,
+  "loss": 4,
+  "streak": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6499c9343621549b734872d4"
+  },
+  "firstname": "abc",
+  "lastname": "abc",
+  "username": "abcefg",
+  "password": "Miki123!q",
+  "email": "abcefg@gmail.com",
+  "rating": 0,
+  "tokens": 50,
+  "type": "player",
+  "win": 0,
+  "loss": 0,
+  "streak": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b9723603b6b9768987ef4f"
+  },
+  "username": "mica",
+  "password": "123",
+  "rating": 240,
+  "type": "player",
+  "tokens": 200,
+  "firstname": "Mica",
+  "lastname": "Mici",
+  "win": 7,
+  "loss": 2,
+  "streak": 3
+},{
+  "_id": {
+    "$oid": "64b9725903b6b9768987ef51"
+  },
+  "username": "baki",
+  "password": "123",
+  "rating": 60,
+  "type": "player",
+  "tokens": 200,
+  "firstname": "Viktor",
+  "lastname": "Bakic",
+  "win": 1,
+  "loss": 3,
+  "streak": 1
+},{
+  "_id": {
+    "$oid": "64b9727103b6b9768987ef53"
+  },
+  "username": "kilua",
+  "password": "123",
+  "rating": 440,
+  "type": "player",
+  "tokens": 300,
+  "firstname": "Ilija",
+  "lastname": "Jokovic",
+  "win": 12,
+  "loss": 5,
+  "streak": 4
+},{
+  "_id": {
+    "$oid": "64b972b903b6b9768987ef55"
+  },
+  "username": "moriarty",
+  "password": "123",
+  "rating": 1240,
+  "type": "player",
+  "tokens": 700,
+  "firstname": "Miki",
+  "lastname": "Riki",
+  "win": 15,
+  "loss": 4,
+  "streak": 6
+}]

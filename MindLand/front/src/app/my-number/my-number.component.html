@@ -1,0 +1,57 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./my-number" class="nav-link">Nova igra</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">MOJ BROJ</h1>
+
+    <div class="button-row">
+    <button class="btn-my-number" disabled="true">{{myNumber}}</button>
+    </div>
+
+    <div class="button-row">
+    <button (click)="insertParam(number1)" [disabled]='isDisabled'>{{number1}}</button>
+    <button (click)="insertParam(number2)" [disabled]='isDisabled'>{{number2}}</button>
+    <button (click)="insertParam(number3)" [disabled]='isDisabled'>{{number3}}</button>
+    </div>
+
+    <div class="button-row">
+    <button (click)="insertParam('+')" [disabled]='isDisabled'>+</button>
+    <button (click)="insertParam('-')" [disabled]='isDisabled'>-</button>
+    <button (click)="insertParam('*')" [disabled]='isDisabled'>*</button>
+    <button (click)="insertParam('/')" [disabled]='isDisabled'>/</button>
+    <button (click)="insertParam('(')" [disabled]='isDisabled'>(</button>
+    <button (click)="insertParam(')')" [disabled]='isDisabled'>)</button>
+    </div>
+
+    <div class="button-row">
+        <input type="text" readonly class="info-textbox" [value]='expression'>
+        <button class="btn-result" disabled="true">{{result}}</button>
+    </div>
+
+    <div class="button-row">
+        <button (click)="undoExpression()" [disabled]='isDisabled'><i class="fas fa-arrow-left"></i></button>
+        <button (click)="deleteExpression()" [disabled]='isDisabled'><i class="fas fa-trash"></i></button>
+    </div>
+
+    <div class="button-row" style="position: relative;">
+        <button (click)="stopTimer()" id="btnStop" [style.zIndex]="zIndexStop">Stop</button>
+        <button (click)="stopTimer()" [disabled]='isDisabled' id="btnConfirm" [style.zIndex]="zIndexConfirm">Confirm</button>
+    </div>
+
+
+    <div class="timer">
+        {{timer}}
+    </div>
+</div>

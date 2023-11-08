@@ -1,0 +1,59 @@
+<nav class="navbar">
+    <div class="row-container">
+        <div class="left-side">
+            <span class="player-blue">{{this.gameInfo.bluePlayer}}</span>
+        </div>
+        <div class="center-side">
+            <span class="player-blue">{{this.gameInfo.bluePoints}}</span>
+            <span class="timer">{{timer}}</span>
+            <span class="player-red">{{this.gameInfo.redPoints}}</span>
+        </div>       
+        <div class="right-side">
+            <span class="player-red">{{this.gameInfo.redPlayer}}</span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">MOJA CIFRA</h1>
+
+    <div class="button-row">
+    <button class="btn-my-number" disabled="true">{{myNumber}}</button>
+    </div>
+
+    <div class="button-row">
+    <button (click)="insertParam(number1)" [disabled]='isDisabled'>{{number1}}</button>
+    <button (click)="insertParam(number2)" [disabled]='isDisabled'>{{number2}}</button>
+    <button (click)="insertParam(number3)" [disabled]='isDisabled'>{{number3}}</button>
+    </div>
+
+    <div class="button-row">
+    <button (click)="insertParam('+')" [disabled]='isDisabled'>+</button>
+    <button (click)="insertParam('-')" [disabled]='isDisabled'>-</button>
+    <button (click)="insertParam('*')" [disabled]='isDisabled'>*</button>
+    <button (click)="insertParam('/')" [disabled]='isDisabled'>/</button>
+    <button (click)="insertParam('(')" [disabled]='isDisabled'>(</button>
+    <button (click)="insertParam(')')" [disabled]='isDisabled'>)</button>
+    </div>
+
+    <div class="button-row">
+        <input type="text" readonly class="info-textbox" [value]='expression'>
+        <button class="btn-result" disabled="true">{{result}}</button>
+        <input type="text" readonly class="info-textbox" [value]='expressionOpponent'>
+    </div>
+
+    <div class="button-row">
+        <button (click)="undoExpression()" [disabled]='isDisabled'><i class="fas fa-arrow-left"></i></button>
+        <button (click)="deleteExpression()" [disabled]='isDisabled'><i class="fas fa-trash"></i></button>
+    </div>
+
+    <div class="button-row" style="position: relative;">
+        <button *ngIf="playerIdent == currentPlayerIdent" (click)="btnClickOrTimerEnd()" id="btnStop" [style.zIndex]="zIndexStop">Stop</button>
+        <button (click)="sendResult()" [disabled]='isDisabled' id="btnConfirm" [style.zIndex]="zIndexConfirm">Potvrdi</button>
+    </div>
+
+  
+
+ 
+</div>

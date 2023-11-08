@@ -1,0 +1,113 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./asocijacije" class="nav-link">Nova igra</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="title">
+    ASOCIJACIJE
+</div>
+
+<div class="center-side">
+    <span class="timer">10</span>
+</div>
+
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="openField('A', 0)" [disabled]="'field-found' == foundClass[0]">{{A[0]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="openField('B', 0)" [disabled]="'field-found' == foundClass[1]">{{B[0]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="openField('A', 1)" [disabled]="'field-found' == foundClass[0]">{{A[1]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="openField('B', 1)" [disabled]="'field-found' == foundClass[1]">{{B[1]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="openField('A', 2)" [disabled]="'field-found' == foundClass[0]">{{A[2]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="openField('B', 2)" [disabled]="'field-found' == foundClass[1]">{{B[2]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="openField('A', 3)" [disabled]="'field-found' == foundClass[0]">{{A[3]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="openField('B', 3)" [disabled]="'field-found' == foundClass[1]">{{B[3]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input [id]='foundClass[0]' type="text" class="column-input" placeholder="?" (click)="setColumn('A')" 
+            [(ngModel)]="A[4]" [disabled]="disableColumn[0]">
+    </div>
+    <div class="right-side">
+        <input [id]='foundClass[1]' type="text" class="column-input" placeholder="?" (click)="setColumn('B')"
+            [(ngModel)]="B[4]" [disabled]="disableColumn[1]">
+    </div>
+</div>
+<div class="row-container">
+    <div class="center-side">
+        <input  [id]='foundClass[4]' type="text" class="column-input" placeholder="?" (click)="setColumn('K')"
+         [(ngModel)]="konacno" [disabled]="disableColumn[4]">
+        <button id="potvrdi-button" (click)="guessAnswer()">Potvrdi</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <input  [id]='foundClass[2]' type="text" class="column-input" placeholder="?" (click)="setColumn('C')" 
+      [(ngModel)]="C[4]" [disabled]="disableColumn[2]">
+    </div>
+    <div class="right-side">
+      <input [id]='foundClass[3]' type="text" class="column-input" placeholder="?" (click)="setColumn('D')" 
+      [(ngModel)]="D[4]" [disabled]="disableColumn[3]">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="openField('C', 3)" [disabled]="'field-found' == foundClass[2]">{{C[3]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="openField('D', 3)" [disabled]="'field-found' == foundClass[3]">{{D[3]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="openField('C', 2)" [disabled]="'field-found' == foundClass[2]">{{C[2]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="openField('D', 2)" [disabled]="'field-found' == foundClass[3]">{{D[2]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="openField('C', 1)" [disabled]="'field-found' == foundClass[2]">{{C[1]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="openField('D', 1)" [disabled]="'field-found' == foundClass[3]">{{D[1]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="openField('C', 0)" [disabled]="'field-found' == foundClass[2]">{{C[0]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="openField('D', 0)" [disabled]="'field-found' == foundClass[3]">{{D[0]}}</button>
+    </div>
+</div>

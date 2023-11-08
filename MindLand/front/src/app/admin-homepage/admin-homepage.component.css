@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .welcome-message {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .user-rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .start-game-button {
+    background: linear-gradient(135deg,#00ff73, #0a20e6);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .start-game-button:hover {
+    background: linear-gradient(135deg,#1b1b1b, #df0ae6);
+  }
+  
+  .start-game-button:focus {
+    outline: none;
+  }
+
+  .tokens-remaining {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .leaderboard-button {
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .statistics-button {
+    color: #2980b9;
+    right: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .statistics-icon {
+    color: greenyellow;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .leaderboard-icon {
+    color: #f2f531;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .buttons-container {
+    display: flex;
+  }
+
+.btn1{
+  text-align: center;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: #e67e22;
+}
+
+.btn1:hover{
+  background-color: #ffad42;
+}
+
+.btn1:active{
+  background-color: #b66a08;
+}
+
+.btn2{
+  text-align: center;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: #be2cbe;
+}
+
+.btn2:hover{
+  background-color: #ff88e5;
+}
+
+.btn2:active{
+  background-color: #550143;
+}
+
+.star-icon{
+    color: #f2f531;
+}
+
+.coin-icon{
+    color:rgb(93, 236, 9);
+}
+
+.config-icon{
+  color: orange;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+
+.statistics-button,
+.leaderboard-button, .config-button {
+margin-right: 10px;
+margin-top: 10px;
+}
+
+.btn3{
+  text-align: center;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  background-color:rgb(70, 88, 90);
+}
+
+.btn3:hover{
+  background-color: rgb(93, 119, 122);
+}
+
+.btn2:active{
+  background-color: rgb(58, 73, 73);
+}

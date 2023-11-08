@@ -1,0 +1,59 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./my-number" class="nav-link">Nova igra</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">SLOVOTEKA</h1>
+    <p class="game-title">{{message}}</p>
+
+    <div class="button-row">
+    <button (click)="chooseLetter(0)" [disabled]='isDisabled'><b>{{letters[0]}}</b></button>
+    <button (click)="chooseLetter(1)" [disabled]='isDisabled'><b>{{letters[1]}}</b></button>
+    <button (click)="chooseLetter(2)" [disabled]='isDisabled'><b>{{letters[2]}}</b></button>
+    <button (click)="chooseLetter(3)" [disabled]='isDisabled'><b>{{letters[3]}}</b></button>
+    <button (click)="chooseLetter(4)" [disabled]='isDisabled'><b>{{letters[4]}}</b></button>
+    <button (click)="chooseLetter(5)" [disabled]='isDisabled'><b>{{letters[5]}}</b></button>
+    <button (click)="chooseLetter(6)" [disabled]='isDisabled'><b>{{letters[6]}}</b></button>
+    <button (click)="chooseLetter(7)" [disabled]='isDisabled'><b>{{letters[7]}}</b></button>
+    <button (click)="chooseLetter(8)" [disabled]='isDisabled'><b>{{letters[8]}}</b></button>
+    <button (click)="chooseLetter(9)" [disabled]='isDisabled'><b>{{letters[9]}}</b></button>
+    <button (click)="chooseLetter(10)" [disabled]='isDisabled'><b>{{letters[10]}}</b></button>
+    <button (click)="chooseLetter(11)" [disabled]='isDisabled'><b>{{letters[11]}}</b></button>
+    </div>
+
+    <div class="button-row">
+        <button (click)="undoLetter()" [disabled]='isDisabled'><i class="fas fa-arrow-left"></i></button>
+        <button (click)="deleteWord()" [disabled]='isDisabled'><i class="fas fa-trash"></i></button>
+    </div>
+
+    <div class="word">
+        {{word}}
+    </div>
+
+    <div class="button-row" style="position: relative;">
+        <button (click)="stopTimer()" id="btnStop" [style.zIndex]="zIndexStop">Stop</button>
+        <button (click)="addWord()" [disabled]='isDisabled' id="btnConfirm" [style.zIndex]="zIndexConfirm">Reč!</button>
+    </div>
+
+    
+
+
+
+</div>
+<div class="timer">
+    {{timer}}
+</div>
+<div class="words">
+    <span *ngFor="let w of words">{{w}}, </span>
+</div>

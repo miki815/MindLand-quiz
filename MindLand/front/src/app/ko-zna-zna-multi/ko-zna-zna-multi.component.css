@@ -1,0 +1,291 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .nav-item-right {
+    margin-left: auto; 
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  .game-title{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .question-container {
+    font-size: 18px;
+    margin-bottom: 50px;
+    resize: none;
+    background-color: #555;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    color: white;
+  }
+  
+  .answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .button-row button {
+    width: 350px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #428bca;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  .button-row button:hover {
+    background-color: #3276b1;
+  }
+  
+  .button-row button:active {
+    background-color: #135392;
+  }
+  
+  .timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 30px;
+    background-color: #777;
+    color: white;
+    border: 1px solid black;
+  }
+
+  #true-answer{
+    background-color: rgb(77, 240, 44);
+  }
+
+  #red-answer{
+    background-color: red;
+  }
+
+  #blue-answer{
+    background-color: blue;
+  }
+
+  #same-answer{
+    background: linear-gradient(to right, blue 50%, red 50%);
+  }
+
+  #same-true-answer{
+    background: linear-gradient(to right, blue, blue 33.33%, rgb(77, 240, 44) 33.33%,  rgb(77, 240, 44) 66.66%, red 66.66%);
+  }
+
+  #blue-true-answer{
+    background: linear-gradient(to right, blue 50%, rgb(77, 240, 44) 50%);
+  }
+
+  #red-true-answer{
+    background: linear-gradient(to right, red 50%, rgb(77, 240, 44) 50%);
+  }
+
+  #dalje-btn{
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #48464b;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+
+  #ukradi-btn{
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #948dd4;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+
+  #dalje-btn:hover, #ukradi-btn:hover{
+    background-color: rgb(128, 145, 151);
+  }
+
+  #dalje-btn:active, #ukradi-btn:active{
+    background-color: rgb(38, 42, 44);
+  }
+
+  span{
+    font-size: 20px;
+  }
+
+  .timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #7a7a7ae7;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .player-blue{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-width: 50px;
+  }
+
+  .player-red{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-width: 50px;
+  }
+
+  .row-container {
+    display: flex;
+  }
+  
+  .left-side {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .center-side {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  #ukradi-btn-blue{
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+
+  #ukradi-btn-red{
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+
+  #ukradi-btn-same{
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, blue 50%, red 50%);
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+
+  .user-secret-icon{
+    color: black;
+  }

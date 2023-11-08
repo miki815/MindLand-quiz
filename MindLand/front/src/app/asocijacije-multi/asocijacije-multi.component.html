@@ -1,0 +1,127 @@
+<nav class="navbar">
+    <div class="row-container">
+        <div class="left-side">
+            <span class="player-blue">{{this.gameInfo.bluePlayer}}</span>
+        </div>
+        <div class="center-side">
+            <span class="player-blue">{{this.gameInfo.bluePoints}}</span>
+            <span class="timer">{{timer}}</span>
+            <span class="player-red">{{this.gameInfo.redPoints}}</span>
+
+        </div>       
+        <div class="right-side">
+            <span class="player-red">{{this.gameInfo.redPlayer}}</span>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="row-container first-row">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="fieldClick('A', 0)" 
+      [disabled]="foundClass[0] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{A[0]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="fieldClick('B', 0)"
+         [disabled]="foundClass[1] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{B[0]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="fieldClick('A', 1)"
+       [disabled]="foundClass[0] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{A[1]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[1]' class="square-button" (click)="fieldClick('B', 1)" 
+       [disabled]="foundClass[1] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{B[1]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="fieldClick('A', 2)"
+       [disabled]="foundClass[0] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{A[2]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="fieldClick('B', 2)"
+         [disabled]="foundClass[1] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{B[2]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[0]' class="square-button" (click)="fieldClick('A', 3)" 
+      [disabled]="foundClass[0] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{A[3]}}</button>
+    </div>
+    <div class="right-side">
+        <button [id]='foundClass[1]' class="square-button" (click)="fieldClick('B', 3)" 
+        [disabled]="foundClass[1] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{B[3]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input [id]='foundClass[0]' type="text" class="column-input" placeholder="?" (click)="setColumn('A')" 
+            [(ngModel)]="A[4]" [disabled]="disableColumn[0] || currentPlayerIdent != playerIdent || fieldOpen == false">
+    </div>
+    <div class="right-side">
+        <input [id]='foundClass[1]' type="text" class="column-input" placeholder="?" (click)="setColumn('B')"
+            [(ngModel)]="B[4]" [disabled]="disableColumn[1] || currentPlayerIdent != playerIdent || fieldOpen == false">
+    </div>
+</div>
+<div class="row-container">
+    <div class="center-side">
+        <button id="potvrdi-button" (click)="answerSubmit()">Potvrdi</button>
+        <input  [id]='foundClass[4]' type="text" class="column-input" placeholder="?" (click)="setColumn('K')"
+         [(ngModel)]="konacno" [disabled]="disableColumn[4] || currentPlayerIdent != playerIdent || fieldOpen == false">
+        <button id="dalje-button" (click)="skipMove()" [disabled]="currentPlayerIdent != playerIdent || fieldOpen == false">Dalje</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <input  [id]='foundClass[2]' type="text" class="column-input" placeholder="?" (click)="setColumn('C')" 
+      [(ngModel)]="C[4]" [disabled]="disableColumn[2] || currentPlayerIdent != playerIdent || fieldOpen == false">
+    </div>
+    <div class="right-side">
+      <input [id]='foundClass[3]' type="text" class="column-input" placeholder="?" (click)="setColumn('D')" 
+      [(ngModel)]="D[4]" [disabled]="disableColumn[3] || currentPlayerIdent != playerIdent || fieldOpen == false">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="fieldClick('C', 3)"
+       [disabled]="foundClass[2] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{C[3]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="fieldClick('D', 3)"
+       [disabled]="foundClass[3] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{D[3]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="fieldClick('C', 2)" 
+      [disabled]="foundClass[2] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{C[2]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="fieldClick('D', 2)"
+       [disabled]="foundClass[3] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{D[2]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="fieldClick('C', 1)" 
+      [disabled]="foundClass[2] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{C[1]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="fieldClick('D', 1)" 
+      [disabled]="foundClass[3] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{D[1]}}</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+      <button [id]='foundClass[2]' class="square-button" (click)="fieldClick('C', 0)" 
+      [disabled]="foundClass[2] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{C[0]}}</button>
+    </div>
+    <div class="right-side">
+      <button [id]='foundClass[3]' class="square-button" (click)="fieldClick('D', 0)"
+       [disabled]="foundClass[3] != '' || currentPlayerIdent != playerIdent || fieldOpen == true">{{D[0]}}</button>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h2 id="win">Pobede: {{player.win}}</h2>
+    <h2 id="loss">Porazi: {{player.loss}}</h2>
+    <h2 id="streak">Trenutni niz pobeda: {{player.streak}}</h2>
+    <h1 class="game-title">Izaberite igru i pogledajte vašu statistiku!</h1>
+
+    <div class="button-row">
+        <button (click)="showStats(4)">Slovoteka</button>
+        <button (click)="showStats(1)">Moja cifra</button>
+        <button (click)="showStats(2)">Skočko</button>
+    </div>
+
+    <div class="button-row">
+        <button (click)="showStats(3)">Korpa</button>
+        <button (click)="showStats(5)">Ko zna zna</button>
+        <button (click)="showStats(6)">Asocijacije</button>
+    </div>
+</div>

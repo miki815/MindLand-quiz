@@ -1,0 +1,92 @@
+.scoreboard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+  }
+  
+  .winner {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .scores {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player-score {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  
+  .player-name {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    background-color: #777;
+    width: 150px;
+  }
+  
+  .score {
+    color: white;
+    font-size: 24px;
+    background-color: #333;
+    padding: 15px;
+  }
+
+  #blueS{
+    background-color: blue;
+  }
+
+  #redS{
+    background-color: red;
+  }
+
+  .rating{
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 200px;
+  }
+
+  button{
+    background-color: #df0ae6;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  button:hover {
+    background: linear-gradient(135deg,#1b1b1b, #df0ae6);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    background-color: #135392;
+  }

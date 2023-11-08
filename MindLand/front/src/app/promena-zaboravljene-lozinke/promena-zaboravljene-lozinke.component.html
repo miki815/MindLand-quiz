@@ -1,0 +1,38 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./" class="nav-link">Uloguj se</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./register" class="nav-link">Registracija</a>
+      </li>
+      <li class="nav-item-right">
+        <span href="./" class="nav-link"></span>
+      </li>
+    </ul>
+</nav>
+
+<div class="container"  *ngIf="linkValidan == true">
+    <div class="title">
+        Uspešan zahtev za promenom lozinke
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="lozinka_nova">Nova lozinka:</label>
+        <input type="password" id="lozinka_nova" name="lozinka_nova" [(ngModel)]="lozinka_nova">
+      </div>
+      <div class="form-group">
+        <label for="lozinka_nova2">Potvrda lozinke:</label>
+        <input type="password" id="lozinka_nova2" name="lozinka_nova2" [(ngModel)]="lozinka_nova2">
+      </div>
+      <div class="form-group">
+        <button (click)="promena_lozinke()">Potvrdi</button>
+      </div>
+    </form>
+    <span class="error">{{errorMsg}}</span>
+</div>
+<div class="container" *ngIf="linkValidan == false">
+    <h3>Link za promenu lozinke je istekao.</h3>
+</div>
+
+

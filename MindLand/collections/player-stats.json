@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "64b9f07103b6b9768987ef59"
+  },
+  "longestWord": 8,
+  "totalWords": 7,
+  "totalLetters": 26,
+  "winSlovoteka": 1,
+  "username": "miki815",
+  "lossSlovoteka": 1,
+  "winMojBroj": 9,
+  "lossMojBroj": 3,
+  "distance": 12,
+  "digitCnt": 63,
+  "skockoWin": 11,
+  "skockoLoss": 2,
+  "skockoCombos": 62,
+  "korpaWin": 10,
+  "korpaLoss": 20,
+  "pitanjaTrue": 22,
+  "pitanjaFalse": 13,
+  "pitanjaDalje": 7,
+  "pitanjaUkradiWin": 7,
+  "pitanjaUkradiLoss": 3,
+  "asocijacijeStats": [
+    3,
+    5,
+    6,
+    2,
+    1,
+    2
+  ]
+},{
+  "_id": {
+    "$oid": "64bfce4503b6b9768987ef63"
+  },
+  "longestWord": 21,
+  "totalWords": 6,
+  "totalLetters": 23,
+  "winSlovoteka": 2,
+  "username": "moriarty",
+  "lossSlovoteka": 2,
+  "winMojBroj": 11,
+  "lossMojBroj": 1,
+  "distance": 4,
+  "digitCnt": 66,
+  "skockoWin": 11,
+  "skockoLoss": 2,
+  "skockoCombos": 61,
+  "korpaWin": 11,
+  "korpaLoss": 21,
+  "pitanjaTrue": 31,
+  "pitanjaFalse": 20,
+  "pitanjaDalje": 7,
+  "pitanjaUkradiWin": 8,
+  "pitanjaUkradiLoss": 6,
+  "asocijacijeStats": [
+    2,
+    4,
+    6,
+    2,
+    1,
+    3,
+    {
+      "$numberDouble": "NaN"
+    }
+  ]
+}]

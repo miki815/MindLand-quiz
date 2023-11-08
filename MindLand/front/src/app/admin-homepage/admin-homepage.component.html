@@ -1,0 +1,22 @@
+<div class="background-container">
+    <div class="container">
+      <div class="welcome-message">
+        Dobrodošli nazad, {{player.username}}
+      </div>
+
+      <button (click)="dodajAsocijaciju()" class="start-game-button">
+        Dodaj asocijaciju
+      </button>
+      <button (click)="dodajPitanje()" class="start-game-button">
+        Dodaj pitanje
+      </button>
+  
+      <div class="buttons-container">
+        <div class="config-button">
+          <button (click)="signOut()" title="Odjava" class="btn3">
+            <i class="fas fa-sign-out-alt config-icon"></i>
+          </button>
+      </div>
+      </div>
+    </div>
+  </div>

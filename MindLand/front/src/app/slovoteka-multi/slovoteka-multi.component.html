@@ -1,0 +1,60 @@
+<nav class="navbar">
+    <div class="row-container">
+        <div class="left-side">
+            <span class="player-blue">{{this.gameInfo.bluePlayer}}</span>
+        </div>
+        <div class="center-side">
+            <span class="player-blue">{{this.gameInfo.bluePoints}}</span>
+            <span class="timer">{{timer}}</span>
+            <span class="player-red">{{this.gameInfo.redPoints}}</span>
+        </div>       
+        <div class="right-side">
+            <span class="player-red">{{this.gameInfo.redPlayer}}</span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">SLOVOTEKA</h1>
+    <p *ngIf="opponentWords.length == 0" class="game-title">{{message}}</p>
+
+    <div *ngIf="opponentWords.length > 0" class="words">
+        <span *ngFor="let w of opponentWords">{{w}}, </span>
+    </div>
+
+    <div class="button-row" *ngIf="opponentWords.length == 0">
+    <button (click)="chooseLetter(0)" [disabled]='isDisabled'><b>{{letters[0]}}</b></button>
+    <button (click)="chooseLetter(1)" [disabled]='isDisabled'><b>{{letters[1]}}</b></button>
+    <button (click)="chooseLetter(2)" [disabled]='isDisabled'><b>{{letters[2]}}</b></button>
+    <button (click)="chooseLetter(3)" [disabled]='isDisabled'><b>{{letters[3]}}</b></button>
+    <button (click)="chooseLetter(4)" [disabled]='isDisabled'><b>{{letters[4]}}</b></button>
+    <button (click)="chooseLetter(5)" [disabled]='isDisabled'><b>{{letters[5]}}</b></button>
+    <button (click)="chooseLetter(6)" [disabled]='isDisabled'><b>{{letters[6]}}</b></button>
+    <button (click)="chooseLetter(7)" [disabled]='isDisabled'><b>{{letters[7]}}</b></button>
+    <button (click)="chooseLetter(8)" [disabled]='isDisabled'><b>{{letters[8]}}</b></button>
+    <button (click)="chooseLetter(9)" [disabled]='isDisabled'><b>{{letters[9]}}</b></button>
+    <button (click)="chooseLetter(10)" [disabled]='isDisabled'><b>{{letters[10]}}</b></button>
+    <button (click)="chooseLetter(11)" [disabled]='isDisabled'><b>{{letters[11]}}</b></button>
+    </div>
+
+    <div class="button-row" *ngIf="opponentWords.length == 0">
+        <button (click)="undoLetter()" [disabled]='isDisabled'><i class="fas fa-arrow-left"></i></button>
+        <button (click)="deleteWord()" [disabled]='isDisabled'><i class="fas fa-trash"></i></button>
+    </div>
+
+    <div class="word" *ngIf="opponentWords.length == 0">
+        {{word}}
+    </div>
+
+    <div class="button-row" style="position: relative;" *ngIf="opponentWords.length == 0">
+        <button *ngIf="playerIdent == currentPlayerIdent" (click)="stopTimer()"
+         id="btnStop" [style.zIndex]="zIndexStop">Stop</button>
+        <button (click)="addWord()" [disabled]='isDisabled' id="btnConfirm" [style.zIndex]="zIndexConfirm">Reč!</button>
+    </div>
+
+</div>
+
+<div class="words">
+    <span *ngFor="let w of words">{{w}}, </span>
+</div>

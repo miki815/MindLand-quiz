@@ -1,0 +1,42 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./admin-homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./admin-asocijacije" class="nav-link">Dodaj asocijaciju</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h1 class="game-title">DODAJ PITANJE</h1>
+    <p class="game-title">U sivo polje unesite pitanje, zatim ponuđene odgovore u predviđena polja. Na kraju unesite i redni broj tačnog odgovora.</p>
+    <textarea class="question-container" rows="4" [(ngModel)]="question.text"></textarea>
+
+    <div class="answer-container">
+        <div class="button-row">
+            <input type="text" class="column-input" [(ngModel)]="question.answer1" placeholder="Odgovor 1">
+            <input type="text" class="column-input" [(ngModel)]="question.answer2" placeholder="Odgovor 2">
+        </div>
+
+        <div class="button-row">
+            <input type="text" class="column-input" [(ngModel)]="question.answer3" placeholder="Odgovor 3">
+            <input type="text" class="column-input" [(ngModel)]="question.answer4" placeholder="Odgovor 4">
+        </div>
+        <div class="button-row">
+            <input type="text" class="column-input" [(ngModel)]="question.correctAnswer" placeholder="Tacan odgovor">
+
+        </div>
+
+        <div class="button-row">
+            <button (click)="dodajPitanje()">Dodaj!</button>
+        </div>
+    </div>
+
+</div>
+

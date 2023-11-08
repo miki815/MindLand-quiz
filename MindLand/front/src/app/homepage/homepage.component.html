@@ -1,0 +1,47 @@
+<div class="background-container">
+    <div class="container">
+      <div class="welcome-message">
+        Dobrodošli nazad, {{player.username}}
+      </div>
+      
+      <div class="user-rating">
+        Rejting: <i class="fas fa-star star-icon"></i>{{player.rating}}
+      </div>
+  
+      <div class="titula">
+        Titula: {{animal}}
+      </div>
+      <img [src]="animalImg" class="titula-img">
+
+
+      <div class="tokens-remaining">
+        Tokeni: <i class="fas fa-coins coin-icon"></i> {{player.tokens}}
+      </div>
+
+      <button (click)="startGame()" class="start-game-button">
+        Nova igra
+      </button>
+      <button (click)="exercise()" class="start-game-button">
+        Vežba
+      </button>
+  
+      <div class="buttons-container">
+        <div class="leaderboard-button">
+            <button (click)="showLeaderboard()" title="Rang lista" class="btn1">
+                <i class="fas fa-trophy leaderboard-icon"></i> 
+            </button>
+        </div>
+    
+        <div class="statistics-button">
+            <button (click)="showStats()" title="Statistika" class="btn2">
+                <i class="fas fa-chart-line statistics-icon"></i>
+            </button>
+        </div>
+        <div class="config-button">
+            <button (click)="signOut()" title="Odjava" class="btn3">
+              <i class="fas fa-sign-out-alt config-icon"></i>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>

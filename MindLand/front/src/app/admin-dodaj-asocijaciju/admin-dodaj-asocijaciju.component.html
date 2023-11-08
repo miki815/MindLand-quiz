@@ -1,0 +1,104 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item-left">
+        <a href="./admin-homepage" class="nav-link">Početna</a>
+      </li>
+      <li class="nav-item-left">
+        <a href="./admin-pitanja" class="nav-link">Dodaj pitanje</a>
+      </li>
+      <li class="nav-item-right">
+        <a href="./" class="nav-link">Odjavi se</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="title">
+    DODAJ ASOCIJACIJU
+</div>
+
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="A[0]" placeholder="A1">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="B[0]" placeholder="B1">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="A[1]" placeholder="A2">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="B[1]" placeholder="B2">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="A[2]" placeholder="A3">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="B[2]" placeholder="B3">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="A[3]" placeholder="A4">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="B[3]" placeholder="B4">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="A[4]" placeholder="[A resenja]">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="B[4]" placeholder="[B resenja]">
+    </div>
+</div>
+<div class="row-container">
+    <div class="center-side">
+        <input type="text" class="column-input" [(ngModel)]="konacno" placeholder="[Konacno resenja]">
+        <button id="potvrdi-button" (click)="dodajAsocijaciju()">Dodaj!</button>
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="C[4]" placeholder="[C resenja]">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="D[4]" placeholder="[D resenja]">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="C[3]" placeholder="C4">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="D[3]" placeholder="D4">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="C[2]" placeholder="C3">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="D[2]" placeholder="D3">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="C[1]" placeholder="C2">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="D[1]" placeholder="D2">
+    </div>
+</div>
+<div class="row-container">
+    <div class="left-side">
+        <input type="text" class="column-input" [(ngModel)]="C[0]" placeholder="C1">
+    </div>
+    <div class="right-side">
+        <input type="text" class="column-input" [(ngModel)]="D[0]" placeholder="D1">
+    </div>
+</div>
